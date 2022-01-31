@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="es" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vesper+Libre&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/tema.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Espai Visual</title>
+</head>
+
+<body class="d-flex flex-column primerFondo" id="body" onload="includeHTML()">
+    <div style="overflow-x:hidden">
+        <header class="container-fluid sin-fondo">
+            <nav class="navbar navbar-light navbar-1 white">
+                <a class="navbar-brand" href="#" id="navbar-brand" lang="ca">ESPAI VISUAL</a>
+                <div id="menuToggle">
+                    <input id="hamburguer" type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="http://www.jaumebalmes.com/ca/">Balmes</a></li>
+                        <li><a href="https://www.balmesinnova.com">Balmes Innova</a></li>
+                        <li><a href="http://www.jaumebalmes.com/ca/contacte">Información</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="flex-shrink-0 sin-fondo">
+            <div class="completar">
+                <h1 class="completarTitulo">COMPLETAR</h1>
+                <p class="porcentaje"><span id="porciento">0</span>%</p>
+            </div>
+            <div class="fondo container-fluid" id="fondo1">
+                <div class="container">
+                    <section class="mb-5">
+                        <div class="text-center">
+                            <h4 class="h2 mb-2">La página del Curso de Diseño Web ha desaparecido</h4>
+                            <p id="pulsa" class="oculto2 mb-4">¡Pulsa el botón y demuestra tus habilidades
+                                creando una nueva página!</p>
+                            <a class="btn btn-primary mb-1" style="cursor: pointer" id="botonLaunch"
+                                onclick="addElement()" title="Switch theme">El botón</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <section class="container-fluid botonesOcultos fondo fondo2">
+                <div class="container elegir3">
+                    <div class="text-center mt-1 mb-5">
+                        <h1>Curso de diseño y publicación de páginas web</h1>
+                    </div>
+                    <div class="m-0 p-0 select fase1end" id="botonesEstilos">
+                        <div>
+                            <div class="text-center">
+                                <div class="anchoTitulos">
+                                    <h4 class="h3 elegir">Vamos a darle estilos a la página<br>Aquí tienes algunas
+                                        opciones</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-4 mb-3 justify-content-center text-center">
+                                <h4 class="text-center">Selecciona una tipografía</h4>
+                                <div class="row justify-content-center">
+                                    <button class="btn btn-light col-7 col-sm-5 p-1 m-1 tipografia1"
+                                        onclick="tipografia1()">Inconsolata</button>
+                                    <button class="btn btn-light col-7 col-sm-5 p-1 m-1 tipografia2"
+                                        onclick="tipografia2()">Segoe</button>
+                                    <button class="btn btn-light col-7 col-sm-5 p-1 m-1 tipografia3"
+                                        onclick="tipografia3()">Arvo</button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 mb-3">
+                                <h4 class="text-center">Selecciona unos colores</h4>
+                                <div class="row justify-content-center">
+                                    <button class="btn btn-light col-7 col-sm-5 p-1 m-1"
+                                        onclick="color1()">Colors</button>
+                                    <button class="btn btn-light col-7 col-sm-5 p-1 m-1"
+                                        onclick="color2()">Intense</button>
+                                    <button class="btn btn-light col-7 col-sm-5 p-1 m-1" onclick="color3()">B &
+                                        W</button>
+                                    <button class="btn btn-light col-7 col-sm-5 p-1 m-1"
+                                        onclick="color4()">Icecream</button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 mb-3">
+                                <h4 class="text-center">Tamaño de la letra</h4>
+                                <div class="row justify-content-center">
+                                    <button class="btn btn-light col-7 col-sm-4 p-1 m-1" onclick="resizeText(-1)">+
+                                        Pequeño</button>
+                                    <button class="btn btn-light col-7 col-sm-4  p-1 m-1" onclick="resizeText(1)">+
+                                        Grande</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 p-0 fase2">
+                        <div class="justify-content-center">
+                            <div class="mb-2 p-0">
+                                <div class="text-center botonesContenidos botonesContenidos1">
+                                    <div>
+                                        <h4 class="mt-3 mb-3 elegir anchoTitulos">¡La página necesita contenidos!</h4>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-light m-1" id="botonAñadirContenido"
+                                            onclick="mostrarContenido()">Añadir
+                                            contenido 0/3</button>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center botonesContenidos botonesContenidos1">
+                                    <button class="btn btn-light m-1 ocultarBotonEjemplos" id="botonEjemplos"
+                                        onclick="mostrarEjemplos()">Añadir Ejemplos</button>
+                                    <button class="btn btn-light m-1 ocultarBotonEjemplos"
+                                        onclick="eliminarBotonesC()">Fijar Contenidos</button>
+                                </div>
+                                <div class="col-12 text-center botonesContenidos">
+                                    <button class="btn btn-light m-1" style="cursor: pointer" id="botonTerceraFase"
+                                        onclick="addElement3()" title="Switch theme">Añadir sección</button>
+                                </div>
+                            </div>
+                            <div class="m-2 elegir fase2contenido">
+                                <h4 class="text-center">Lenguaje: HTML</h4>
+                                <p>El contenido de la página. Los párrafos, títulos, secciones, imágenes, videos, menús,
+                                    botones, etc. La base de todo. Es muy importante elaborar el código HTML de forma
+                                    limpia y ordenada, todo lo que vendrá después, así como el mantenimiento posterior
+                                    de la página dependerán de ello.</p>
+                                <div class="ocultarEjemplos mostrarEjemplos">
+                                    <p>&lt;h1>Soy un título&lt;/h1></p>
+                                    <p>&lt;p>Soy un párrafo&lt;/p></p>
+                                    <p>&lt;a>Soy un enlace&lt;/a></p>
+                                </div>
+                            </div>
+                            <div class="m-2 elegir fase2contenido">
+                                <h4 class="text-center">Lenguaje: CSS</h4>
+                                <div>
+                                    <p>El CSS define los estilos de la página. Colores, tipografias,
+                                        espaciados, colocación y ordenación, tamaños. Las normas CSS funcionan con un
+                                        selector, que define los elementos que se verán afectados, y las propias normas.
+                                    </p>
+                                </div>
+                                <div class="ocultarEjemplos mostrarEjemplos">
+                                    <p>p {color:red} Establece en rojo el color de los párrafos (p).</p>
+                                    <p>h1 {font-family:Arial} Establece la tipografía de los títulos (h1) como Arial.
+                                    </p>
+                                    <p>a {margin: 15px} Establece 15 píxeles de margen en los enlaces (a).</p>
+                                </div>
+                            </div>
+                            <div class="m-2 elegir fase2contenido">
+                                <h4 class="text-center">Lenguaje: JavaScript</h4>
+                                <p>Nos permite crear una web interactiva, por ejemplo, modificando los elementos de la
+                                    página al pulsar un botón. Las funciones de JavaScript deben iniciarse, por ejemplo,
+                                    utilizando onLoad se iniciará la función elegida cuando se cargue un elemento, y
+                                    onClick, cuando hagamos un click en el elemento.</p>
+                                <div class="ocultarEjemplos mostrarEjemplos">
+                                    <div>
+                                        <p>function myFunction() {</p>
+                                        <p>var x = document.activeElement.tagName;</p>
+                                        <p>document.getElementById("demo").innerHTML = x; }</p>
+                                        <p>En este ejemplo creamos una variable con el "tagName" y lo introducimos en el
+                                            elemento identificado como "demo".</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-center mt-3" id="botonSegundaFase">
+                        <div class="col-12">
+                            <h4 class="mt-3 mb-3 elegir anchoTitulos">Cuando te hayas decidido por un estilo, pulsa el
+                                botón</h4>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-light mb-1" style="cursor: pointer" id="botonLaunch2"
+                                onclick="addElement2()" title="Switch theme">Fijar estilos</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="fase3">
+                <div class="intermedio ciervo">
+                    <div class="deer">
+                    </div>
+                </div>
+                <section class="container-fluid mt-5 fondo fondo12">
+                    <div class="container">
+                        <div class="m-0 p-0">
+                            <div class="row justify-content-center text-center">
+                                <div class="col-12 justify-content-center text-center mt-2">
+                                    <h3 class="elegir3 mt-1 mb-1 anchoTitulos">La clase de 2019</h3>
+                                </div>
+                                <div class="col-11 justify-content-center" id="botonesContenidos2">
+                                    <div class="row justify-content-center text-center">
+
+                                        <button id="mostrarAlumnos" class="col-7 col-sm-5 col-md-3 btn btn-light p-1 m-1"
+                                            onclick="mostrarAlumnos()">Introducir
+                                            Alumnos</button>
+                                        <button id="mostrarProfesores" class="col-7 col-sm-5 col-md-3 btn btn-light p-1 m-1"
+                                            onclick="mostrarProfesores()">Introducir Profesores</button>
+                                    </div>
+                                    <div class="row justify-content-center text-center">
+                                        <button class="col-7 col-sm-5 col-md-3 btn btn-light p-1 m-1"
+                                            onclick="eliminarBotonesAP()">Fijar
+                                            esta sección</button>
+                                    </div>
+                                </div>
+                                <div class="col-11 justify-content-center">
+                                    <div class="row justify-content-center text-center">
+                                        <button class="col-7 col-sm-5 col-md-3 btn btn-light p-1 m-1" id="botonCuartaFase"
+                                            onclick="addElement4()" title="Switch theme">Siguiente
+                                            sección</button>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center text-center mt-2 fase3figs2 fase3contenido2">
+                                    <h3 class="elegir3 mt-1">Profesores</h3>
+                                    <div class="row justify-content-center text-center col-12">
+                                        <figure class="m-2 justify-content-center text-center">
+                                            <figcaption class="text-center" id="prof1caption">Anna Hernández
+                                            </figcaption>
+                                            <div class="scene">
+                                                <div class="card card1">
+                                                    <div class="card__face card__face--front">
+                                                        <img src="img/ia-1.jpg" alt="foto de un teleñeco">
+                                                    </div>
+                                                    <div class="card__face card__face--back">
+                                                        <img src="img/prof-1.jpg" alt="foto de un profesor">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                        <figure class="m-2 justify-content-center text-center">
+                                            <figcaption class="text-center" id="prof2caption">Rafa Mir</figcaption>
+                                            <div class="scene">
+                                                <div class="card card2">
+                                                    <div class="card__face card__face--front">
+                                                        <img src="img/ia-4.jpg" alt="foto de un teleñeco">
+                                                    </div>
+                                                    <div class="card__face card__face--back">
+                                                        <img src="img/prof-2.jpg" alt="foto de un profesor">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center text-center mt-2 fase3contenido fase3figs">
+                                    <h3 class="elegir3 mt-1">Alumnos</h3>
+                                    <div class="row col-12 justify-content-center text-center ">
+                                        <figure class="m-2">
+                                            <figcaption class="text-center" id="alum1caption">Yvonne</figcaption>
+                                            <div class="scene">
+                                                <div class="card card3">
+                                                    <div class="card__face card__face--front">
+                                                        <img src="img/ia-2.jpg" alt="foto de un teleñeco">
+                                                    </div>
+                                                    <div class="card__face card__face--back">
+                                                        <img src="img/alum-1.jpg" alt="foto de un alumno">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                        <figure class="m-2">
+                                            <figcaption class="text-center" id="alum2caption">Virginia</figcaption>
+                                            <div class="scene">
+                                                <div class="card card4">
+                                                    <div class="card__face card__face--front">
+                                                        <img src="img/ia-3.jpg" alt="foto de un teleñeco">
+                                                    </div>
+                                                    <div class="card__face card__face--back">
+                                                        <img src="img/alum-3.jpg" alt="foto de un alumno">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                        <figure class="m-2">
+                                            <figcaption class="text-center" id="alum3caption">Jonathan</figcaption>
+                                            <div class="scene">
+                                                <div class="card card5">
+                                                    <div class="card__face card__face--front">
+                                                        <img src="img/ia-5.jpg" alt="foto de un teleñeco">
+                                                    </div>
+                                                    <div class="card__face card__face--back">
+                                                        <img src="img/alum-4.jpg" alt="foto de un alumno">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                        <figure class="m-2">
+                                            <figcaption class="text-center" id="alum4caption">Jordi</figcaption>
+                                            <div class="scene">
+                                                <div class="card card6">
+                                                    <div class="card__face card__face--front">
+                                                        <img src="img/ia-9.jpg" alt="foto de un teleñeco">
+                                                    </div>
+                                                    <div class="card__face card__face--back">
+                                                        <img src="img/alum-5.jpg" alt="foto de un alumno">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="row col-12 justify-content-center text-center ">
+                                        <figure class="m-2">
+                                            <figcaption class="text-center" id="alum5caption">Aaron</figcaption>
+                                            <div class="scene">
+                                                <div class="card card7">
+                                                    <div class="card__face card__face--front">
+                                                        <img src="img/ia-7.jpg" alt="foto de un teleñeco">
+                                                    </div>
+                                                    <div class="card__face card__face--back">
+                                                        <img src="img/alum-7.jpg" alt="foto de un alumno">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                        <figure class="m-2">
+                                            <figcaption class="text-center" id="alum6caption">Francisco</figcaption>
+                                            <div class="scene">
+                                                <div class="card card8">
+                                                    <div class="card__face card__face--front">
+                                                        <img src="img/ia-8.jpg" alt="foto de un teleñeco">
+                                                    </div>
+                                                    <div class="card__face card__face--back">
+                                                        <img src="img/alum-6.jpg" alt="foto de un alumno">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                        <figure class="m-2">
+                                            <figcaption class="text-center" id="alum7caption">Doris</figcaption>
+                                            <div class="scene">
+                                                <div class="card card9">
+                                                    <div class="card__face card__face--front">
+                                                        <img src="img/ia-11.jpg" alt="foto de un teleñeco">
+                                                    </div>
+                                                    <div class="card__face card__face--back">
+                                                        <img src="img/alum-8.jpg" alt="foto de un alumno">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                        <figure class="m-2">
+                                            <figcaption class="text-center" id="alum8caption">Anas</figcaption>
+                                            <div class="scene">
+                                                <div class="card card10">
+                                                    <div class="card__face card__face--front">
+                                                        <img src="img/ia-10.jpg" alt="foto de un teleñeco">
+                                                    </div>
+                                                    <div class="card__face card__face--back">
+                                                        <img src="img/alum-9.jpg" alt="foto de un alumno">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                        <figure class="m-2">
+                                            <figcaption class="text-center" id="alum9caption">Roger</figcaption>
+                                            <div class="scene">
+                                                <div class="card card11">
+                                                    <div class="card__face card__face--front">
+                                                        <img src="img/ia-12.jpg" alt="foto de un teleñeco">
+                                                    </div>
+                                                    <div class="card__face card__face--back">
+                                                        <img src="img/alum-2.jpg" alt="foto de un alumno">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="row col-12 justify-content-center text-center ">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="fase4">
+                <div class="intermedio zorro d-flex flex-row-reverse">
+                    <div class="fox"></div>
+                </div>
+                <section class="container-fluid mt-5 fondo fondo13">
+                    <div class="container">
+                        <div class="  m-0 p-0 elegir3">
+                            <div class="row justify-content-center text-center">
+                                <div
+                                    class="row col-12 justify-content-center text-center mt-2 fase4contenido fase4figs">
+                                    <h3 class="m-2 elegir">¿En qué consiste el curso?</h3>
+                                    <div class="row justify-content-center text-center ">
+                                        <div class="col-11 elegir text-center">
+                                            <h4>Competencia general</h4>
+                                            <p>Crear y publicar páginas web que integren textos, imágenes y
+                                                otros elementos,
+                                                utilizando lenguajes de marcas y editores apropiados, según
+                                                especificaciones
+                                                y
+                                                condiciones de «usabilidad» dadas y realizar los procedimientos de
+                                                instalación y
+                                                verificación de las mismas en el servidor correspondiente.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="row col-12 justify-content-center text-center mt-2 fase4contenido fase4figs">
+                                    <div class="elegir">
+                                        <h4 class="col-12 mt-1">Módulos Formativos</h4>
+                                        <div class="col-12 text-left">
+                                            <p>Horas lectivas totales: 480H</p>
+                                            <p class="text-left">Módulo de prácticas profesionales: 80H</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="row justify-content-center text-center">
+                                            <div class="row col-10 col-md-5 m-2 p-2 elegir">
+                                                <h4 class="col-12">Crear los contenidos en HTML</h4>
+                                                <p>Horas: 80</p>
+                                                <p>Aprender las etiquetas HTML, desde los &lt;p> hasta los &lt;iframe>
+                                                    pasando
+                                                    por las listas con sus &lt;ul> y sus &lt;ol> llenos de &lt;li>, los
+                                                    &lt;img>
+                                                    y los &lt;video> que enlazan archivos, así como los &lt;span> que ni
+                                                    se
+                                                    ven,
+                                                    los &lt;div> que organizan la página junto a los &lt;section> o los
+                                                    &lt;aside>. </p>
+                                            </div>
+                                            <div class="row col-10 col-md-5 m-2 p-2 elegir">
+                                                <h4 class="col-12">Hojas de estilos CSS</h4>
+                                                <p>Horas: 58</p>
+                                                <p>Aprendemos a modificar el aspecto de la página. Desde darle color a
+                                                    un
+                                                    texto
+                                                    o cambiar la tipografia, pasando por colocar los elementos, darles
+                                                    márgenes
+                                                    para que no esten pegados o alinearlos. También podemos hacer que
+                                                    cambien
+                                                    según el tamaño de la pantalla, todo lo necesario para que la página
+                                                    se
+                                                    vea
+                                                    como queremos nos lo permite el CSS.</p>
+                                            </div>
+                                            <div class="row col-10 col-md-5 m-2 p-2 elegir">
+                                                <h4 class="col-12">Plantillas y formularios</h4>
+                                                <p>Horas: 48</p>
+                                                <p>Utilizar plantillas para crear páginas web, se trata de una forma
+                                                    rápida
+                                                    de
+                                                    obtener buenos resultados, pero límita el margen de maniobra del
+                                                    diseñador.
+                                                </p>
+                                                <p>La creación de formularios con muchos tipos de &lt;input> donde se
+                                                    introduce
+                                                    la información, todos con sus &lt;label> para que el usuario sepa lo
+                                                    que
+                                                    debe introducir, entre otros elementos.</p>
+                                            </div>
+                                            <div class="row col-10 col-md-5 m-2 p-2 elegir">
+                                                <h4 class="col-12">Programación con JavaScript</h4>
+                                                <p>Horas: 72</p>
+                                                <p>El JavaScript le da comportamiento a la página. Permite que el
+                                                    usuario
+                                                    interactue con
+                                                    la página, y que la página actue por si misma bajo ciertas
+                                                    condiciones.
+                                                    Por ejemplo, permite modificar el contenido de la página bajo
+                                                    ciertas
+                                                    condiciones o cuando el usuario pulsa un botón.</p>
+                                            </div>
+                                            <div class="row col-10 col-md-5 m-2 p-2 elegir">
+                                                <h4 class="col-12">Validación de datos y efectos especiales</h4>
+                                                <p>Horas: 72</p>
+                                                <p>Validar los datos que se introducen en un formulario, que en el campo
+                                                    Email
+                                                    nos introduzcan un email valido, y que en caso contrario se informe
+                                                    al
+                                                    usuario.</p>
+                                                <p>Trabajar con selección de imagenes, creación de textos mejorados y
+                                                    efectos
+                                                    estéticos, trabajar con marcos y ventanas multiples.</p>
+                                            </div>
+                                            <div class="row col-10 col-md-5 p-2 m-2 elegir">
+                                                <h4 class="col-12">Publicar páginas web</h4>
+                                                <p>Horas: 66</p>
+                                                <p>Para que una página sea accesible para el público básicamente
+                                                    necesita
+                                                    dos
+                                                    cosas, un dominio, como www.espaivisual.cat y un servidor que aloje
+                                                    la
+                                                    página.</p>
+                                                <p>El primero es una dirección que debemos comprar y renovar anualmente,
+                                                    el
+                                                    segundo es un servicio de un tercero, que guardará nuestra web y la
+                                                    servirá
+                                                    a quien acceda a la dirección.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="botonFinal text-center justify-content-center">
+                                <button class="btn-light p-1 m-3" id="botonFinal" data-toggle="modal"
+                                    data-target="#modal1" onclick="obtenerResultados()">Obtener Resultados</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="row modal-header">
+                            <h4 class="modal-title col-8" id="modal1Label">Puntuación Final:
+                            </h4>
+                            <h4 class="col-4"><span id="puntuacion"></span></h4>
+                        </div>
+                        <div class="row modal-body puntuaciones">
+                            <p class="col-6">Completado</p>
+                            <p class="col-6">
+                                <span id="porciento2">0</span>%
+                            </p>
+                            <p class="col-6">Tipografia</p>
+                            <p class="col-6">
+                                <span id="tipografiaElegida"></span>
+                            </p>
+                            <p class="col-6">Colores:</p>
+                            <p class="col-6">
+                                <span id="colorElegido"></span>
+                            </p>
+                            <p class="col-6">Tamaño:</p>
+                            <p class="col-6">
+                                <span id="tamañoElegido"></span>%
+                            </p>
+                            <p class="col-6">Clase:</p>
+                            <p class="col-6">
+                                <span id="APElegido"></span>
+                            </p>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-between">
+                            <form id="contacte" name="contacte" method="post" action="enviar.php" class="contacte">
+                                <input type="text" name="nom" id="nom" placeholder="Nombre" required>
+                                <input name="enviar" class="btn btn-secondary submit" type="submit" id="enviar"
+                                    value="Enviar Resultados">
+                                <input type="hidden" name="inputpuntuacio" id="inputpuntuacio" value="">
+                            </form>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ Modal -->
+        </main>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/botonescambio.js"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/giro-cartas.js"></script>
+        <script>
+            //Varibles que limitan el numero de usos de las funciones
+            var contenidos = 0;
+            var controlBotonesEjemplos = 0;
+            var controlEjemplos = 0;
+            var controlAlumnos = 0;
+            var controlProfesores = 0;
+            //Variables que añaden los puntos
+            var puntosPrimerBoton = 0;
+            var puntosTipografia = 0;
+            var puntosContenidos = 0;
+            var puntosColor = 0;
+            var puntosSize = 0;
+            var puntosFijarContenidos = 0;
+            var puntosSeccion2 = 0;
+            var puntosFijarEstilos = 0;
+            var puntosEjemplos = 0;
+            var puntosFijarContenidos = 0;
+            var puntosProfesores = 0;
+            var puntosAlumnos = 0;
+            var puntosFijarGente = 0;
+            var puntosTotales = 0;
+            var puntosEliminarBotonesAP = 0;
+            var puntosAñadirCuatro = 0
+            var puntosBotonFinal = 0;
+            var combo1 = 0;
+            var tipografiaElegida = 'Arial';
+            var colorElegido = 'Básico';
+            var tamañoElegido = '100'
+            var tipografiaPuntos = 0;
+            var coloresPuntos = 0;
+            var APElegido = 'no se muestran';
+            var calculoPuntos = '0';
+            var score = 0;
+            var colorPuntos = 0;
+            var combo11 = 0;
+            var combo21 = 0;
+            var combo31 = 0;
+            var combo12 = 0;
+            var combo22 = 0;
+            var combo32 = 0;
+        </script>
+        <script>
+            $(function () {
+                $("#menu").hide();
+                $("#hamburguer").click(function () {
+                    $("#menu").toggle("swing");
+                });
+            });
+        </script>
+    </div>
+</body>
+
+</html>

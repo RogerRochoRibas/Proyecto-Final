@@ -1,0 +1,799 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.jumbotron {
+    background-color: transparent !important;
+}
+
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    max-width: 100%;
+}
+
+section {
+    min-height: 70vh;
+    padding-bottom: 60px;
+}
+
+.container {
+    padding: 35px 5px 20px 5px;
+}
+
+#navbar-brand {
+    font-weight: bolder;
+    font-size: 2.5em;
+}
+
+/*Títulos*/
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bolder;
+}
+
+.anchoTitulos {
+    display: inline-block;
+}
+
+.elegir,
+.elegir3 {
+    padding: 5px 10px 5px 10px
+}
+
+h4 {
+    color: rgb(255, 255, 255);
+    margin: 15px 0 15px 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+figcaption {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: bold;
+    width: 162px;
+}
+
+.fondo2 {
+    padding-top: 20px
+}
+
+/*Ocultar botones*/
+.botonesOcultos,
+.botonesContenidos1ocultar {
+    display: none
+}
+
+.completar {
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+    background-color: black;
+    border: 3px solid white;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    z-index: 2000;
+    /*mostrar por encima*/
+}
+
+.completarTitulo {
+    margin: 0;
+    padding: 0;
+    font-size: 2em
+}
+
+.porcentaje {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+}
+
+/*Colores iniciales*/
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.primerFondo {
+    background-image: url("../img/bg-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.puntuacionesFondo {
+    background-image: url("../img/bg-1-resp.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.navbar.navbar-1 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+}
+
+/*Colors menu*/
+#menu {
+    background: #ffffff;
+    color: black;
+}
+
+#menuToggle span {
+    background: #ffffff;
+}
+
+#menuToggle input:checked~span {
+    background-color: black
+}
+
+a:hover {
+    color: #007bff;
+}
+
+label {
+    color: black;
+}
+
+/*Fin de los colores iniciales*/
+
+/*Cambios de tipografía*/
+.tipografia {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.tipografia1 {
+    font-family: 'Inconsolata', monospace;
+}
+
+.tipografia2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tipografia3 {
+    font-family: 'Arvo', serif;
+}
+
+/*Fin de cambios de tipografía*/
+
+/*Esquema de color 1*/
+
+.color-1 {
+    background-color: #ffffff
+}
+
+.color-1 #logo {
+    color: #ac3b61;
+}
+
+.color-1 p {
+    color: #ffffff;
+}
+
+.color-1 h2,
+.color-1 h3,
+.color-1 h4 {
+    color: #123c69;
+}
+
+.color-1 h1 {
+    color: #ffffff;
+}
+
+.color-1 button,
+.color-1 .submit {
+    color: #ffffff;
+    background-color: #ac3b61;
+}
+
+.color-1 .navi {
+    color: #ac3b61
+}
+
+.color-1 .fondo2 {
+    background-image: url("../img/bg-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.color-1 .navbar.navbar-9 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FBD8');
+}
+
+.color-1 #menu {
+    background: #ffffff;
+    color: #123c69;
+}
+
+.color-1 #menuToggle span {
+    background-color: #ac3b61;
+}
+
+.color-1 #menuToggle input:checked~span {
+    background-color: #ac3b61
+}
+
+.color-1 a:hover {
+    color: #007bff;
+}
+
+.color-1 .navbar-brand {
+    color: #ac3b61
+}
+
+.color-1 .elegir {
+    background-color: rgba(255, 136, 0, 0.8) !important;
+    border-radius: 5px;
+}
+
+
+.color-1 h3,
+.color-1 h4,
+.color-1 label {
+    color: white
+}
+
+.color-1 figcaption {
+    background-color: rgba(255, 255, 255) !important;
+}
+
+.color-1 figcaption {
+    color: #123c69;
+}
+
+.color-1 .fondo13 {
+    background-image: url("../img/bg-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.color-1 .fondo12 {
+    background-image: url("../img/bg-13.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.color-1 h3 {
+    background-color: rgba(255, 136, 0, 0.6) !important;
+    border-radius: 5px;
+}
+
+
+.color-1 .completar {
+    background-color: white;
+}
+
+.color-1 .completarTitulo {
+    color: #ac3b61;
+}
+
+.color-1 .porcentaje {
+    color: #123c69
+}
+
+/*Esquema de color 2*/
+
+.color-2 p {
+    color: #08d9d6
+}
+
+.color-2 h1,
+.color-2 h2,
+.color-2 h3,
+.color-2 h4,
+.color-2 label {
+    color: #ff2e63
+}
+
+.color-2 button,
+.color-2 .submit {
+    color: #ffffff;
+    background-color: #08d9d6
+}
+
+.color-2 .navi {
+    color: #ffffff
+}
+
+.color-2 .fondo2 {
+    background-image: url("../img/bg-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.color-2 .elegir {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    border-radius: 5px;
+}
+
+.color-2 h3 {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    border-radius: 5px;
+}
+
+.color-2 figcaption {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.color-2 .fondo12 {
+    background-image: url("../img/bg-12.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.color-2 .fondo13 {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/bg-19.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*Esquema de color 3*/
+.color-3 figcaption {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.fondo {
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.color-3 {
+    background-color: #000000
+}
+
+.color-3 .fondo2 {
+    background-image: url("../img/bg-10.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.color-3 header {
+    border-bottom: 2px solid white;
+}
+
+.color-3 .elegir3 {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    border-radius: 5px;
+}
+
+.color-3 figcaption {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.color-3 h4,
+.color-3 label {
+    color: white;
+}
+
+.color-3 {
+    background-color: black;
+}
+
+.color-3 button,
+.color-3 .submit {
+    border: 3px solid black;
+}
+
+.color-3 .sin-fondo {
+    background-color: black;
+}
+
+.color-3 .fondo12 {
+    background-image: url("../img/bg-14.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.color-3 .fondo13 {
+    background-image: url("../img/bg-18.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*Esquema de color 4 */
+.color-4 .sin-fondo {
+    background-image: url("../img/bg-20.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.color-4,
+.color-4 .jumbotron {
+    background-color: #ffffff !important
+}
+
+.color-4 header {
+    background-color: #ffffff !important;
+    color: rgb(41, 41, 41);
+}
+
+.color-4 h1,
+.color-4 h2,
+.color-4 h3,
+.color-4 h4,
+.color-4 p,
+.color-4 label,
+.color-4 button,
+.color-4 figcaption,
+.color-4 .submit {
+    color: #54575d;
+}
+
+.color-4 button,
+.color-4 .submit {
+    background-color: #bce8e8 !important;
+}
+
+.color-4 .navbar.navbar-9 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FBD8');
+}
+
+.color-4 #menu {
+    background: #ffffff !important;
+    color: #123c69;
+}
+
+.color-4 #menuToggle span,
+.color-4 #menuToggle input:checked~span {
+    background: #948b84;
+}
+
+.color-4 a:hover {
+    color: #d4c8be;
+}
+
+.color-4 .submit:hover {
+    color: white
+}
+
+.color-4 .navbar-brand {
+    color: #3f3736;
+}
+
+
+.color-4 figcaption {
+    background-color: rgba(255, 255, 255) !important;
+}
+
+.color-4 figcaption {
+    color: #123c69;
+}
+
+.color-4 .completar {
+    background-color: #bce8e8;
+}
+
+.color-4 .completarTitulo {
+    color: #3f3736
+}
+
+.color-4 .porcentaje {
+    color: #123c69
+}
+
+/*Fin de los esquemas de color*/
+
+/*Menú Hamburguesa*/
+
+#menuToggle {
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    /* ocultarlo */
+    z-index: 2;
+    /* ponerlo sobre la hamburguesa */
+    -webkit-touch-callout: none;
+}
+
+/* La hamburgersa */
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    border-radius: 3px;
+
+    z-index: 1;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/*  Transformar la hamburguesa en una cruz, primera linea de lado */
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(1px, 8px);
+}
+
+/*Ocultar la de en medio. */
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/* La otra linea va en dirección opuesta */
+#menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(1px, 0px);
+}
+
+/* Colocar el menú en su sitio */
+#menu {
+    position: absolute;
+    width: 250px;
+    margin: -120px 0 0 -210px;
+    padding: 30px;
+    padding-top: 80px;
+    list-style-type: none;
+}
+
+#menu li {
+    padding: 5px 0;
+    font-size: 22px;
+}
+
+.fase1end .fase2 {
+    display: block;
+}
+
+.fase2contenido,
+.ocultarEjemplos,
+.fase3contenido,
+.fase3,
+.fase3contenido2,
+.fase4,
+.ocultarBotonEjemplos {
+    display: none
+}
+
+figure {
+    text-align: center;
+}
+
+/*Modal*/
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+.puntuaciones {
+    color: black;
+    padding-right: 1%;
+    padding-left: 4%;
+}
+
+#puntuacion {
+    color: black;
+}
+
+.color-1 #puntuacion,
+.color-3 #puntuacion {
+    color: white;
+}
+
+.color-2 #puntuacion {
+    color: #ff2e63
+}
+
+.puntos {
+    text-align: right;
+}
+
+#modal1Label {
+    color: black;
+}
+
+.color-1 #modal1Label {
+    color: white;
+}
+
+.color-1 .puntuaciones {
+    color: white
+}
+
+.color-1 .modal-content {
+    background-color: rgba(255, 136, 0, 0.8)
+}
+
+.color-2 #modal1Label {
+    color: #ff2e63;
+}
+
+.color-2 .puntuaciones {
+    color: #08d9d6
+}
+
+.color-2 .modal-content {
+    background-color: #000000;
+}
+
+.color-3 #modal1Label {
+    color: #ffffff;
+}
+
+.color-3 .puntuaciones {
+    color: #ffffff
+}
+
+.color-3 .modal-content {
+    background-color: #000000;
+    border: 1px solid white;
+}
+
+.fondo13 p {
+    text-align: justify;
+}
+
+/*Cartas y animación*/
+
+.cambioImagen {
+    display: inline-block;
+    width: 162px;
+    height: 245px;
+}
+
+.scene {
+    width: 162px;
+    height: 245px;
+    perspective: 600px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card__face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.card__face--front {
+    margin: -1px 0 0 -1px
+}
+
+.card__face--back {
+    transform: rotateY(180deg);
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
+}
+
+/*Fin de las cartas y animación*/
+
+@media (max-width: 600px) {
+    #navbar-brand {
+        font-size: 1.8em;
+        margin: 0;
+    }
+
+    .primerFondo {
+        background-image: url("../img/bg-1-resp.jpg");
+    }
+
+    .completar {
+        bottom: 1px;
+        left: 1px;
+        padding: 4px;
+        font-size: 0.8em;
+    }
+
+    .completarTitulo {
+        font-size: 1.3em
+    }
+
+    .porcentaje {
+        font-size: 2em
+    }
+
+    .color-4 .sin-fondo {
+        background-color:white;
+        background-image: none;
+    }
+}
+
+@media (max-height: 600px) {
+    .completar {
+        bottom: 1px;
+        left: 1px;
+        padding: 4px;
+        font-size: 0.8em;
+    }
+    .completarTitulo {
+        font-size: 1.3em
+    }
+
+    .porcentaje {
+        font-size: 2em
+    }
+
+    .botonFinal {
+        margin-bottom:40px;
+    }
+}
+
+@media (min-width: 500px) {
+    .color-1 {
+        background-color: #142a2a
+    }
+
+    .color-1 header {
+        background-color: white;
+    }
+
+    .color-1 .fox,
+    .color-1 .deer {
+        height: 81px;
+        width: 144px;
+        background-size: contain;
+        margin:5px;
+    }
+
+    .color-1 .deer {
+        background-image: url("../img/gif-1.gif");
+    }
+
+    .color-1 .fox {
+        background-image: url("../img/gif-2.gif");
+    }
+
+    .color-1 section {
+        margin: 0 !important;
+    }
+}
